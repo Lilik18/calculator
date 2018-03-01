@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="./calc.css" />
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
-    <div>
-  <button>1</button>
-  <button>2</button>
-  <button>3</button>
-</div>
-<div>
-  <button>4</button>
-  <button>5</button>
-  <button>6</button>
+    <input id="input" placeholder="Type here" type="text" name="lname" disabled><br>
+    <div class="button-group">
+      <button onclick="clicked(this)">1</button>
+      <button onclick="clicked(this)">2</button>
+      <button onclick="clicked(this)">3</button>
+      <button onclick="clicked(this)">+</button>
+    </div>
+    <div class="button-group">
+      <button onclick="clicked(this)">4</button>
+      <button onclick="clicked(this)">5</button>
+      <button onclick="clicked(this)">6</button>
+      <button onclick="clicked(this)">-</button>
+    </div>
+    <div class="button-group">
+      <button onclick="clicked(this)">7</button>
+      <button onclick="clicked(this)">8</button>
+      <button onclick="clicked(this)">9</button>
+      <button onclick="clicked(this)">*</button>
+    </div>
+    <div class="button-group">
+      <button onclick="clicked(this)">0</button>
+      <button onclick="clicked(this)">/</button>
+      <button class="long-button">=</button>
+    </div>
+    <script type="text/javascript">
+    function clicked(e) {
+        console.log(e.innerText)
+        document.getElementById("input").value+=e.innerText
 
-</div>
-<div>
-  <button>7</button>
-  <button>8</button>
-  <button>9</button>
-</div>
-<div>
-  <button>0</button>
-  <button>=<button>
+      }
+    </script>
   </body>
 </html>

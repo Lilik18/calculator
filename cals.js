@@ -109,4 +109,4 @@ for(let i = a; i< b: i = i + precision){
 const f = (x) => x;
 
 
-integram(f, 0, 5, 0.00001);
+integral(f, 0, 5, 0.00001);

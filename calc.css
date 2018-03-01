@@ -1,0 +1,15 @@
+.button-group {
+  width: 420px;
+}
+.button-group button{
+  width: 100px;
+  margin-bottom: 5px;
+}
+
+.long-button{
+  width: 204px !important;
+}
+input{
+  width: 408px;
+  margin-bottom: 5px;
+}
